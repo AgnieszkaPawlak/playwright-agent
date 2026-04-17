@@ -1,0 +1,31 @@
+- generic [ref=e451]:
+  - generic [ref=e452]:
+    - generic [ref=e453]:
+      - generic [ref=e454]:
+        - generic [ref=e455]:
+          - button "Open Menu" [ref=e456] [cursor=pointer]
+          - img "Open Menu" [ref=e457]
+        - generic [ref=e459]: Swag Labs
+      - generic [ref=e463]: "Checkout: Your Information"
+    - generic [ref=e466]:
+      - generic [ref=e467]:
+        - textbox "First Name" [ref=e469]
+        - textbox "Last Name" [ref=e471]
+        - textbox "Zip/Postal Code" [ref=e473]
+      - generic [ref=e475]:
+        - button "Go back Cancel" [ref=e476] [cursor=pointer]:
+          - img "Go back" [ref=e477]
+          - text: Cancel
+        - button "Continue" [ref=e478] [cursor=pointer]
+  - contentinfo [ref=e479]:
+    - list [ref=e480]:
+      - listitem [ref=e481]:
+        - link "Twitter" [ref=e482] [cursor=pointer]:
+          - /url: https://twitter.com/saucelabs
+      - listitem [ref=e483]:
+        - link "Facebook" [ref=e484] [cursor=pointer]:
+          - /url: https://www.facebook.com/saucelabs
+      - listitem [ref=e485]:
+        - link "LinkedIn" [ref=e486] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/sauce-labs/
+    - generic [ref=e487]: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
