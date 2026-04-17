@@ -64,23 +64,33 @@ Now I need to perform manual exploratory testing using Playwright MCP browser to
 Please read the test plan from: specs/saucedemo-checkout-test-plan.md
 
 Then execute the test scenarios defined in that plan:
-1. Use Playwright browser tools to manually execute each test scenario from the plan
-2. Follow the step-by-step instructions in each test case
-3. Verify expected results match actual results
-4. Take screenshots at key steps and error states
-5. Document your findings:
-   - Test execution results for each scenario
-   - Any UI inconsistencies or unexpected behaviors
+1. Use Playwright browser tools to manually execute the highest-value scenarios from the plan first, including:
+   - Happy path checkout flow
+   - Required field validation
+   - Cancel and navigation behavior
+   - Authentication redirect behavior
+   - Empty-cart checkout behavior
+   - Mobile viewport verification
+2. Follow the step-by-step instructions in each test case and compare expected results with actual behavior in the live application
+3. Capture the actual selectors, URLs, validation messages, totals, and UI behaviors that can be reused in automation
+4. Save screenshots at key steps and error states in: artifacts/manual-screenshots/
+5. Document your findings in a structured way so they can be reused in Step 4 and Step 6:
+   - Scenario ID or title
+   - Pass/Fail result
+   - Actual behavior vs expected behavior
+   - Stable selectors or locators used successfully
+   - UI inconsistencies or unexpected behaviors
    - Missing validations or bugs discovered
-   - Screenshots as evidence
+   - Screenshot file paths as evidence
+6. Clearly distinguish product defects from test script issues or tool limitations
 ```
 
 **Expected Output:**
 
-- Manual test execution results
-- Screenshots of the application at various states
-- List of observations and findings
-- Any issues discovered during exploration
+- Manual test execution results mapped to explored scenarios
+- Screenshots of the application saved under `artifacts/manual-screenshots/`
+- List of observations, verified selectors, and reusable UI insights
+- Any issues or product defects discovered during exploration
 
 ## STEP 4: Generate Automation Scripts
 
@@ -276,8 +286,9 @@ acceptance criteria. Save it as: specs/saucedemo-checkout-test-plan.md
 
 STEP 3 - EXPLORATORY TESTING:
 Read the test plan from specs/saucedemo-checkout-test-plan.md and use Playwright browser
-tools to manually execute each test scenario. Document findings with screenshots and note
-any issues discovered.
+tools to manually execute the key checkout scenarios. Save screenshots in
+artifacts/manual-screenshots/, document expected vs actual behavior, capture the selectors
+and UI behaviors that work reliably, and note any issues or product defects discovered.
 
 STEP 4 - GENERATE AUTOMATION SCRIPTS:
 Review both the test plan (specs/saucedemo-checkout-test-plan.md) and exploratory testing

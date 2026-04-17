@@ -42,13 +42,13 @@ The checkout workflow is stable for the primary user journey across all configur
 
 ### 2.3 Evidence Captured
 
-- `manual-cart-review.png`
-- `manual-checkout-step-one.png`
-- `manual-validation-empty-fields.png`
-- `manual-checkout-overview.png`
-- `manual-checkout-complete.png`
-- `manual-empty-cart-overview-bug.png`
-- `manual-mobile-cart-view.png`
+- `artifacts/manual-screenshots/manual-cart-review.png`
+- `artifacts/manual-screenshots/manual-checkout-step-one.png`
+- `artifacts/manual-screenshots/manual-validation-empty-fields.png`
+- `artifacts/manual-screenshots/manual-checkout-overview.png`
+- `artifacts/manual-screenshots/manual-checkout-complete.png`
+- `artifacts/manual-screenshots/manual-empty-cart-overview-bug.png`
+- `artifacts/manual-screenshots/manual-mobile-cart-view.png`
 
 ## 3. Automated Test Results
 
@@ -107,7 +107,7 @@ Implemented coverage includes:
   6. Click `Finish`
 - Expected Behavior: The system should block checkout when the cart is empty and show an appropriate validation or redirect message.
 - Actual Behavior: The system proceeds through checkout overview and order completion with zero cart items and zero-value totals.
-- Evidence: `manual-empty-cart-overview-bug.png`
+- Evidence: `artifacts/manual-screenshots/manual-empty-cart-overview-bug.png`
 - Environment: Sauce Demo on Chromium exploratory session; behavior confirmed in automation design as a known product defect
 
 ## 5. Test Coverage Analysis
